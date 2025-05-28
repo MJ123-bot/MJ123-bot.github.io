@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="estilo.css">
+   
+</head>
+<body id="topo">
+
+<div>
+    <img src="logo.jpeg" alt="Descrição da imagem" id="logo">
+</div>
+
+
+<!-- Botão de Alto Contraste -->
+<button id="btn-contraste">Alto Contraste</button>
+
+<button id="btn-leitor" onclick="alternarLeitorTela()">
+    🔊 Ativar Leitor de Tela
+</button>
+
+<!-- Menu -->
+<div id="Menu">
+    <span id="menu_nomes"><a href="#promocoes">Promoções</a></span>
+    <span id="menu_nomes"><a href="#cardapio">Cardápio</a></span>
+    <span id="menu_nomes"><a href="#sobremesas">Sobremesas</a></span>
+    <span id="menu_nomes"><a href="#pagamento">Pagamento</a></span>
+    <span id="menu_nomes"><a href="#suporte">Suporte</a></span>
+   <span id="menu_nomes"><a href="#meuspedidos" id="btnMeusPedidos">Meus Pedidos</a></span>
+</div>
+<div id="modalPedidos" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Acompanhe seu Pedido</h2>
+    <div class="map-container">
+      <!-- Exemplo de mapa embutido do Google Maps -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.590278379185!2d-46.656381684518395!3d-23.60089016836041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c3d8014e1f%3A0xf5d8ee14a3f1d2a7!2sRua%20das%20Flores%2C%20123!5e0!3m2!1spt-BR!2sbr!4v1685241453432!5m2!1spt-BR!2sbr"
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <button id="cancelarPedidoBtn">Cancelar Pedido</button>
+  </div>
+</div>
+
+<!-- Seções do site -->
+<section id="promocoes">
+    <h2>Promoções</h2>
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Combo 1.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Combo Promoção do dia</h3>
+                <p>Acompanha um hamburguer simples (pão, carne, queijo mussarela e molho rose), um refri de lata da sua escolha, uma porção de batata (P) e um potinho de molho especial.</p>
+                <span class="preco">R$ 25,90</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Combo 2.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Combo clássico</h3>
+                <p>Acompanha um hamburguer completo (pão, carne, queijo prato, alface, tomate, cebola e maionese da casa), um copo de bebida da sua escolha, uma porção de batata (M) e um potinho de molho especial.</p>
+                <span class="preco">R$ 28,90</span>
+            </div>
+        </div>
+    </div>
+
+<div class="voltar-topo">
+    <a href="#logo">↑ Voltar ao topo</a>
+</div>
+
+
+
+</section>
+
+<section id="cardapio">
+    <h2>Cardápio</h2>
+
+   <nav id="cardapio-menu">
+  <ul>
+    <li><a href="#lanches">Lanches</a></li>
+    <li><a href="#batatas">Batatas</a></li>
+    <li><a href="#frango-frito">Frango Frito</a></li>
+    <li><a href="#bebidas">Bebidas</a></li>
+  </ul>
+</nav>
+
+    <div id="lanches"> <!-- Lanches -->
+    <h3 class="subtitulo-cardapio">Lanches</h3>
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Lanche bacon.jpeg" alt="Hambúrguer Gourmet" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>X-baconzitos</h3>
+                <p>Hambúrguer artesanal com carne de qualidade, queijo cheddar,bacon e molho especial.</p>
+                <span class="preco">R$ 35,90</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Lanche monstro.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>X-monstro burguer</h3>
+                <p>Pão, carne, queijo prato derretido, alface, tomate, cebola caramelizada e maionese da casa.</p>
+                <span class="preco">R$ 40,70</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Lanche egg.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>X-egg cabuloso</h3>
+                <p>Pão, carne, queijo prato derretido,ovo frito, alface, tomate e maionese da casa.</p>
+                <span class="preco">R$ 34,50</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Lanche fitnes.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>X-fitnes</h3>
+                <p>Pão, carne, queijo prato derretido, alface, tomate, cebola roxa e maionese de alho.</p>
+                <span class="preco">R$ 40,00</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Lanche salada temperada.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>X-salada temperada</h3>
+                <p>Pão, carne, queijo mussarela derreitido, alface, tomate e molho especial.</p>
+                <span class="preco">R$ 37,00</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Lanche salada duplo.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>X-salada duplo</h3>
+                <p>Pão, 2 carnes, 2 fatias de queijo cheedar, 2 alface, 2 tomate, 2 cebola e molho rose.</p>
+                <span class="preco">R$ 39,50</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Lanche cheedar.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>X-cheedar duplo</h3>
+                <p>Pão, 2 carne, 2 queijo cheedar e molho da casa.</p>
+                <span class="preco">R$ 38,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="batatas"></div><!-- Batatas -->
+    <h3 class="subtitulo-cardapio">Batatas</h3>
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Batata.jpeg" alt="Batata Frita com Cheddar e Bacon" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Porção de batata (P)</h3>
+                <p>Batatas crocantes temperadas com sal (300 gramas).</p>
+                <span class="preco">R$ 25,90</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Batata.jpeg" alt="Batata Frita Tradicional" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Porção de batata (M)</h3>
+                <p>Batatas crocantes temperadas com sal (500 gramas).</p>
+                <span class="preco">R$ 34,90</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Batata.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Porção de batata (G)</h3>
+                <p>Batatas crocantes temperadas com sal (700 gramas).</p>
+                <span class="preco">R$ 50,00</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Batata bacon.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Porção de batata com cheedar e bacon (P)</h3>
+                <p>Batatas crocantes com cheedar derretido, bacon picado e temperadas com sal (400 gramas).</p>
+                <span class="preco">R$ 27,90</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Batata bacon.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Porção de batata com cheedar e bacon (M)</h3>
+                <p>Batatas crocantes com cheedar derretido, bacon picado e temperadas com sal (600 gramas).</p>
+                <span class="preco">R$ 39,99</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Batata bacon.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Porção de batata com cheedar e bacon (P)</h3>
+                <p>Batatas crocantes com cheedar derretido, bacon picado e temperadas com sal (800 gramas).</p>
+                <span class="preco">R$ 60,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="frango-frito"></div><!-- Frango Frito -->
+    <h3 class="subtitulo-cardapio">Frango Frito</h3>
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Frango frito.jpeg" alt="Frango Frito Crocante" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Frango Frito Crocante (P)</h3>
+                <p>Peças de frango empanadas e fritas até ficarem douradas e crocantes (300 gramas).</p>
+                <span class="preco">R$ 35,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Frango frito.jpeg" alt="Frango Frito Picante" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Frango Frito Crocante (M)</h3>
+                <p>Peças de frango empanadas e fritas até ficarem douradas e crocantes (500 gramas).</p>
+                <span class="preco">R$ 44,90</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Frango frito.jpeg" alt="Cheeseburger Simples" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Frango Frito Crocante (G)</h3>
+                <p>Peças de frango empanadas e fritas até ficarem douradas e crocantes (700 gramas).</p>
+                <span class="preco">R$ 60,90</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="bebidas"></div><!-- Bebidas -->
+    <h3 class="subtitulo-cardapio">Bebidas</h3>
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Refrigerante de lata.jpeg" alt="Refrigerante Lata" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Refrigerante Lata</h3>
+                <p>Escolha entre Coca-Cola, Guaraná, Fanta, Sprite e outros sabores.</p>
+                <span class="preco">R$ 6,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Suco.jpeg" alt="Suco Natural" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Suco Natural</h3>
+                <p>Suco de frutas frescas (laranja, abacaxi, morango, limão) feito na hora.</p>
+                <span class="preco">R$ 8,00</span>
+            </div>
+        </div>
+    </div>
+
+<div class="voltar-topo">
+    <a href="#logo">↑ Voltar ao topo</a>
+</div>
+
+</section>
+
+<section id="sobremesas">
+    <h2>Sobremesas</h2>
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Banoffe.jpeg" alt="Refrigerante Lata" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Banoffe</h3>
+                <p>Uma massa feita com bolacha, recheado com doce de leite, banana e com cobertura de chantilly com canela.</p>
+                <span class="preco">R$ 45,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Cupcake.jpeg" alt="Refrigerante Lata" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Cupcake</h3>
+                <p>bolo individual (massa opcional), assado em forminha e decorado com coberturas como glacê ou chantilly (de sua escolha), de 120 gramas.</p>
+                <span class="preco">R$ 18,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Sorvete.jpeg" alt="Refrigerante Lata" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Sorvete vulcão</h3>
+                <p>Três bolas de sorvete (sabor opcional), cobertura de chantilly com confeitos, granulados, com 3 canudos de wafer (sabor opcional), uma cereja no topo e com cobertura em cima (sabor opcional).</p>
+                <span class="preco">R$ 15,90</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Banana split.jpeg" alt="Refrigerante Lata" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Banana split</h3>
+                <p>Uma banana fatiada ao meio, com três bolas de sorteve (sabor opicional), cobertura de chantilly com granulados, três cereja no topo e com cobertura em cima (sabor opcional).</p>
+                <span class="preco">R$ 16,50</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Torta.jpeg" alt="Refrigerante Lata" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Torta doce</h3>
+                <p>Uma massa feita de bolacha, recheada de creme de leite condensado com pedaços de amendoin dentro, cobertura de chocolate com castanhas picadas</p>
+                <span class="preco">R$ 32,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardapio-item">
+        <div class="cardapio-item-conteudo">
+            <img src="Pet gato.jpeg" alt="Refrigerante Lata" class="cardapio-item-img">
+            <div class="cardapio-item-texto">
+                <h3>Petit gâteau</h3>
+                <p>Um pequeno bolo de chocolate com casca firme e recheio cremoso, servido quente, com uma bola de sorvete (sabor opcional) e uma fruta fatiado ao meio (opcional).</p>
+                <span class="preco">R$ 26,00</span>
+            </div>
+        </div>
+    </div>
+
+
+<div class="voltar-topo">
+    <a href="#logo">↑ Voltar ao topo</a>
+</div>
+
+
+</section>
+
+<section id="pagamento">
+    <h2>Pagamento</h2>
+
+    <!-- Bloco do formulário -->
+    <div id="bloco-formulario">
+        <form id="form-pagamento">
+            <h3>Dados do Cliente</h3>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="endereco">Endereço de entrega:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="telefone">Telefone/WhatsApp:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <h3>Forma de Pagamento</h3>
+            <label><input type="radio" name="pagamento" value="cartao" required> Cartão de Crédito/Débito</label><br>
+            <label><input type="radio" name="pagamento" value="pix"> PIX</label><br>
+            <label><input type="radio" name="pagamento" value="dinheiro"> Dinheiro</label><br>
+
+            <label for="troco">Troco para quanto? (se dinheiro):</label>
+            <input type="text" id="troco" name="troco" placeholder="Ex: R$ 100,00">
+
+            <button type="submit">Finalizar Pedido</button>
+        </form>
+    </div>
+
+    <!-- Bloco de confirmação -->
+    <div id="bloco-confirmacao" style="display: none;">
+        <h3>✅ Pedido recebido com sucesso!</h3>
+        <p>Tempo estimado de entrega: <strong>40 minutos</strong>.</p>
+        <p>Agradecemos por escolher a nossa lanchonete! 🍔</p>
+    </div>
+
+    <div class="voltar-topo">
+        <a href="#logo">↑ Voltar ao topo</a>
+    </div>
+</section>
+
+<section id="suporte">
+  <h2 class="subtitulo-cardapio">Suporte ao Cliente</h2>
+
+  <div class="cardapio-item">
+    <div class="cardapio-item-conteudo">
+      <div class="cardapio-item-texto">
+        <h3>📦 Onde está meu pedido?</h3>
+        <p>Acompanhe o status do seu pedido na seção "Meus Pedidos" do nosso site.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardapio-item">
+    <div class="cardapio-item-conteudo">
+      <div class="cardapio-item-texto">
+        <h3>💳 Quais formas de pagamento são aceitas?</h3>
+        <p>Cartão de crédito, débito, Pix e dinheiro (quando disponível).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardapio-item">
+    <div class="cardapio-item-conteudo">
+      <div class="cardapio-item-texto">
+        <h3>🔁 Como posso cancelar um pedido?</h3>
+        <p>Cancelamentos podem ser feitos em "Meus Pedidos", se o restaurante ainda não tiver confirmado o preparo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardapio-item">
+    <div class="cardapio-item-conteudo">
+      <div class="cardapio-item-texto">
+        <h3>📞 Fale Conosco</h3>
+        <p><strong>Endereço:</strong> Rua das Flores, 123, Bairro Jardim, Taubaté, São Paulo</p>
+  <p><strong>Telefone:</strong> (12) 1234-5678</p>
+  <p><strong>Email:</strong> Saborsemfronteiras@gmail.com</p>
+  <p><strong>Horário de atendimento:</strong> Segunda á Sexta, 9h às 20h</p>
+
+
+      </div>
+    </div>
+  </div>
+  
+  
+    <div class="voltar-topo">
+        <a href="#logo">↑ Voltar ao topo</a>
+    </div>
+</section>
+
+<script>
+    const sections = document.querySelectorAll("section");
+    const menuLinks = document.querySelectorAll("#menu_nomes a");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        menuLinks.forEach((link) => {
+            link.classList.remove("ativo");
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("ativo");
+            }
+        });
+    });
+</script>
+
+<script>
+document.getElementById("form-pagamento").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio real do formulário
+
+    // Oculta o formulário
+    document.getElementById("bloco-formulario").style.display = "none";
+
+    // Mostra a mensagem de confirmação
+    document.getElementById("bloco-confirmacao").style.display = "block";
+
+    // Aqui você poderia também enviar os dados via back-end ou WhatsApp, se desejar.
+});
+</script>
+
+<script>
+    document.getElementById("btn-contraste").addEventListener("click", function() {
+        document.body.classList.toggle("alto-contraste");
+    });
+</script>
+
+<script>
+let modoLeitorAtivo = false;
+
+function alternarLeitorTela() {
+    modoLeitorAtivo = !modoLeitorAtivo;
+    const btn = document.getElementById("btn-leitor");
+    
+    if (modoLeitorAtivo) {
+        btn.textContent = "🔇 Desativar Leitor de Tela";
+        document.body.addEventListener("click", leituraGlobal);
+    } else {
+        btn.textContent = "🔊 Ativar Leitor de Tela";
+        document.body.removeEventListener("click", leituraGlobal);
+        window.speechSynthesis.cancel();
+    }
+}
+
+function leituraGlobal(event) {
+    // Evita que o botão de ativação também seja lido
+    if (event.target.id === "btn-leitor" || event.target.closest("#btn-leitor")) {
+        return;
+    }
+
+    let texto = event.target.innerText || event.target.alt || event.target.title;
+
+    // Se não tiver texto direto, tenta buscar dentro do elemento
+    if (!texto && event.target.querySelector) {
+        const filhoComTexto = event.target.querySelector("p, h1, h2, h3, span, a");
+        if (filhoComTexto) {
+            texto = filhoComTexto.innerText || filhoComTexto.textContent;
+        }
+    }
+
+    if (texto) {
+        const utterance = new SpeechSynthesisUtterance(texto.trim());
+        utterance.lang = "pt-BR";
+        window.speechSynthesis.cancel(); // Cancela qualquer leitura anterior
+        window.speechSynthesis.speak(utterance);
+    }
+}
+</script>
+<script>
+  const modal = document.getElementById("modalPedidos");
+  const btn = document.getElementById("btnMeusPedidos");
+  const spanClose = document.getElementById("closeModal");
+  const cancelarBtn = document.getElementById("cancelarPedidoBtn");
+
+  // Abrir modal
+  btn.onclick = function(event) {
+    event.preventDefault(); // previne o link padrão
+    modal.style.display = "block";
+  };
+
+  // Fechar modal clicando no X
+  spanClose.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  // Fechar modal clicando fora do conteúdo
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  // Ação do botão cancelar pedido
+  cancelarBtn.onclick = function() {
+    if (confirm("Tem certeza que deseja cancelar o pedido?")) {
+      alert("Pedido cancelado com sucesso!");
+      modal.style.display = "none";
+      // Aqui você pode colocar código para realmente cancelar o pedido, ex: chamar API
+    }
+  };
+</script>
+</body>
+</html>
